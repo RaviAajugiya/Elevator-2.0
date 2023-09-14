@@ -1,0 +1,88 @@
+.main {
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #006266;
+  padding: 30px;
+  font-size: 20px;
+  margin: auto;
+}
+
+.box {
+  position: absolute;
+  background-color: rgb(107, 107, 107) !important;
+  min-height: 100px;
+  width: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: bottom 1s linear;
+}
+
+.elevator {
+  position: relative;
+  width: 30%;
+  padding: 0px 20px;
+}
+.elevator span {
+  z-index: 5;
+}
+.elevator div > div {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b1e2ff;
+}
+
+.elevator > div {
+  background-color: #b1e2ff;
+}
+
+.elevatorArea,
+.maintenance {
+  display: flex;
+  justify-content: space-between;
+}
+
+.switches {
+  display: inline-flex;
+  justify-content: space-around;
+  width: calc(100% - 105px);
+}
+.switches img {
+  width: 45px;
+}
+
+.floors .floor {
+  display: flex;
+  min-height: 100px;
+  align-items: center;
+  gap: 10px;
+}
+.floors .floor span,
+.floors .floor img {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
+.floors .floor span:hover,
+.floors .floor img:hover {
+  background-color: #b1e2ff;
+}
+.floors .floorbtndown {
+  transform: rotate(180deg);
+}
+
+@keyframes boxAnimation {
+  from {
+    top: 0;
+  }
+  to {
+    top: 400px;
+  }
+}/*# sourceMappingURL=style.css.map */

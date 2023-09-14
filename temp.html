@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="eleveator">
+            <span>4</span>
+            <span>3</span>
+            <span>2</span>
+            <span>1</span>
+        </div>
+    </div>
+</body>
+<script>
+    for(let i=1;i<=4;i++){
+        for(let j=1;j<=4;j++){
+            let hh=`<span>4</span><br>`
+            document.getElementsByClassName('eleveator')[i-1].insertAdjacentHTML('afterbegin',hh);
+        }
+        let html=`<div class="eleveator">
+            text1<br><br>
+        </div>`
+        document.getElementsByClassName('parent')[0].insertAdjacentHTML('afterbegin',html);
+    }
+</script>
+</html>
