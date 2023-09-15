@@ -1,4 +1,4 @@
-let floorNum = 10;
+let floorNum = 8;
 let elevator = 5;
 
 let span = '';
